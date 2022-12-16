@@ -1,0 +1,25 @@
+footer {
+	background-color: #04081f;
+
+	address {
+		font-style: normal;
+	}
+
+	.infos {
+		letter-spacing: 0.2em;
+
+		img {
+			margin-right: 16px;
+		}
+	}
+
+	.copyright {
+		font-size: 0.75rem;
+		color: #778497;
+		border-top: 1px solid #242d3d;
+
+		@media (min-width: 1024px) {
+			border: none;
+		}
+	}
+}

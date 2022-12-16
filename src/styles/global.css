@@ -1,3 +1,95 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono-Bold.woff2") format("woff2"), url("/fonts/JetBrainsMono-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Karla";
+  src: url("/fonts/Karla-Regular.woff2") format("woff2"), url("/fonts/Karla-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  background-color: #080e32;
+  font-family: "Karla";
+  min-height: 300vh;
+}
+
+.title {
+  font-family: "JetBrains Mono";
+}
+
+header .logo {
+  width: 210px;
+}
+
+@media (min-width: 1280px) {
+  #menu .btn-menu {
+    font-family: "JetBrains Mono";
+  }
+}
+
+.cta-email {
+  background: transparent url("../../public/img/bg-cta-email.jpg") center/cover no-repeat;
+  border-left: solid 4px #488bbc;
+}
+
+.arrow-container {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .arrow-container {
+    display: block;
+    min-width: 33%;
+  }
+}
+.arrow-container .arrow {
+  position: relative;
+  width: 100%;
+  display: block;
+  height: 1px;
+  background: white;
+}
+.arrow-container .arrow:before, .arrow-container .arrow:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 1px;
+  right: 0;
+  transform-origin: center right;
+  transform: rotate(45deg);
+  background: white;
+}
+.arrow-container .arrow:after {
+  transform: rotate(-45deg);
+}
+
+footer {
+  background-color: #04081f;
+}
+footer address {
+  font-style: normal;
+}
+footer .infos {
+  letter-spacing: 0.2em;
+}
+footer .infos img {
+  margin-right: 16px;
+}
+footer .copyright {
+  font-size: 0.75rem;
+  color: #778497;
+  border-top: 1px solid #242d3d;
+}
+@media (min-width: 1024px) {
+  footer .copyright {
+    border: none;
+  }
+}/*# sourceMappingURL=global.css.map */
